@@ -1,0 +1,251 @@
+/**************** signin page *************** */
+.row.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .row.content .container {
+     flex-direction: column;
+    justify-content: initial;
+   
+   
+    border-radius: 20px; /* Désactivez la bordure arrondie existante */
+  border: 1px solid var(--color-base2); /* Ajoutez une bordure */
+  width: 100%; /* Ajustez la largeur à 100% */
+  box-sizing: border-box; /* Incluez la bordure dans la largeur */
+  padding: 10px; /* Ajustez le padding pour l'intérieur du formulaire */
+  max-width: 400px; /* Ajoutez une largeur maximale */
+  background-color: var(--color-primary);
+  justify-content: center;
+  }
+  
+  .center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  }
+  
+  .center-text {
+  text-align: center;
+  }
+  
+  .row.content .container > h1 {
+    color: var(--color-secondary);
+  }
+  
+  .row.content a {
+    margin-top: 5px;
+    padding: 10px;
+    color: var(--color-secondary);
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .h-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--color-base2);
+    padding: 10px;
+  }
+  
+  .label {
+    font-size: 1.2em;
+    color: #616161;
+    position: absolute;
+    transform: translateY(-1px);
+    transition: all 0.2s ease-in;
+  }
+  
+  .input:focus + label, .input:valid + label {
+    color: var(--color-secondary);
+    transform: translateY(-35px) scale(1.1);
+  }
+  
+  .input:not(:focus):invalid:hover + label {
+    color: var(--color-primary);
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    font-size: 1.2em;
+  }
+  
+  input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    outline: none;
+  }
+  
+  input[type="checkbox"]:checked {
+    accent-color: var(--color-primary-light);
+  }
+  
+  
+  
+  
+  /**************** signup page *************** */
+  
+  .row.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .row.content .container {
+   
+  
+  flex-direction: column;
+   justify-content: initial; 
+  border-radius: 20px; /* Désactivez la bordure arrondie existante */
+  border: 1px solid var(--color-base2); /* Ajoutez une bordure */
+  width: 100%; /* Ajustez la largeur à 100% */
+  box-sizing: border-box; /* Incluez la bordure dans la largeur */
+  padding: 10px; /* Ajustez le padding pour l'intérieur du formulaire */
+  max-width: 400px; /* Ajoutez une largeur maximale */
+  background-color: var(--color-primary);
+  justify-content: center;
+  }
+  
+  .center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  }
+  
+  .center-text {
+  text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .row.content .container > h1 {
+    color: var(--color-secondary);
+  }
+  
+  .row.content a {
+    margin-top: 5px;
+    padding: 10px;
+    color: var(--color-secondary);
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .h-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--color-base2);
+    padding: 10px;
+  }
+  
+  .label {
+    font-size: 1.2em;
+    color: #616161;
+    position: absolute;
+    transform: translateY(-1px);
+    transition: all 0.2s ease-in;
+  }
+  
+  .input:focus + label, .input:valid + label {
+    color: var(--color-secondary);
+    transform: translateY(-35px) scale(1.1);
+  }
+  
+  .input:not(:focus):invalid:hover + label {
+    color: var(--color-primary);
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    font-size: 1.2em;
+  }
+  
+  input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    outline: none;
+  }
+  
+  input[type="checkbox"]:checked {
+    accent-color: var(--color-primary-light);
+  }
+  .ap{
+    background-color:  #2f313077 ; }
+    .btn {
+        background: linear-gradient(
+          to top right,
+          var(--color-primary),
+          var(--color-primary-light)
+        );
+        color: var(--color-secondary);
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: transform 0.2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        white-space: nowrap;
+      
+      
+        
+      }
+      .btn:hover {
+        transform: scale(1.1);
+      }
+    
+    :root {
+        --color-primary: #e7e7e7;
+        --color-secondary: #151815;
+        --color-primary-light: #127912e3;
+        --color-base1: #46546d;
+        --color-base2: #2f7335;
+      
+      }
+       

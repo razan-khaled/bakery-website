@@ -1,0 +1,117 @@
+.row.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.cart_add {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color:#e4ece8;
+    flex-direction: column;
+    border-radius: 40px;
+    margin-top: 25px;
+    padding: 9px 35px;
+    margin: 25px 20px;
+   
+}
+
+.cart_add img {
+    border-radius: 5px;
+    border: 3px solid #000;
+    margin-bottom: 20px;
+}
+
+.cart_add label[for="quantity"] {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.cart_add input {
+    border-radius: 10px;
+    border: 1px solid #9ccea4ee;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 10px;
+    background-color:  #143620;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Candy';
+    transition: all 0.2s ease-in;
+}
+
+input[type="submit"]:hover {
+    background-color: #dfe4d8c2;
+    color:  #221a1a;
+    border: 1px solid  #035821;
+}
+
+.row.content table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.row.content th, .row.content td {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.row.content th {
+    background-color:  #9ccea4ee;
+    color: rgb(12, 11, 11);
+}
+
+.row.content td:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row.content td:first-child form {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    transition: all 0.0;
+    transform: translateX(-40px);
+}
+
+.row.content td:first-child:hover form {
+    opacity: 1;
+    height: 60px;
+    transform: translate(-40px, -10px);
+    transition: all 0.15s ease-in 0.15s;
+}
+
+[remove] {
+    width: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 3px solid  #143620;
+}
+
+.cart_checkout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.center {
+    color:  #09662a;
+  text-align: center;
+}
+
+.mar {
+    margin-left: 30px; 
+
+}

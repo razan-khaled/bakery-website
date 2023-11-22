@@ -1,0 +1,271 @@
+/* Cette page est directement responsable de la page du  store  */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+   color: var(--text-color);
+   background: var(--bd-color);
+   }
+   
+   .section{
+   padding: 60px 14% 70px; 
+    }
+    
+    .home{ 
+    position: relative;
+     width: 100%;
+    height: 100vh; 
+    background-image: url(../images/cook.jpg);  
+    background-size:cover;
+    background-position: center;  
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    
+  }
+  .home-textsl {
+    position: absolute; /* Position absolue pour contrôler l'emplacement */
+    left: 20px; /* Espacement à la cote gauche */
+    text-align: left; /* Aligner le texte à gauche */
+}
+   .home-text h1{
+     font-family: 'Leckerli One', cursive;
+     Line-height: 1.3;
+      margin-bottom: 25px;
+     font-size: var(--big-font); 
+     color: var(--end-color);
+     padding-left: 20px; 
+     margin-left: 20px;
+    }
+    
+    .home-text p{
+       Line-height: 33px;
+     Color: var(--other-color);
+     font-size: var(--p-font);
+    margin-bottom: 60px;
+    padding-left: 20px;
+    margin-left: 27px; 
+  }
+  .home-textsl {
+    position: absolute;
+    left: 20px;
+    top: 50%; /* Centrer verticalement */
+    transform: translateY(-50%); /* Ajuster pour centrer verticalement */
+    text-align: left;
+}
+
+  .home-textsl h1{
+    font-family: 'Leckerli One', cursive;
+    Line-height: 1.3;
+     margin-bottom: 50px;
+    font-size: var(--big-font); 
+    color: var(--h-color);
+    padding-left: 20px; 
+    margin-left: 20px;
+   }
+   
+   .home-textsl p{
+      Line-height: 33px;
+    Color: var(  --text-color);
+    font-size: var(--p-font);
+   margin-bottom: 60px;
+   padding-left: 20px;
+   margin-left: 27px; 
+ } 
+ .bold-dark {
+  font-weight: 2000; 
+  color: #051f12; 
+ 
+}
+
+  .btnn {
+    padding: 19.5px 34px;  
+    background: var(--main-color);  
+    color: var(--bg-color);  
+    font-size: 13px; 
+    font-weight: 500;  
+    text-transform: uppercase;        
+    border-radius: 3px;  
+    transition: all 0.5s ease;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding-left: 30px; 
+    margin-left: 48px
+
+   
+}
+
+@media (max-width: 767px) {
+    .btnn {
+        padding: 18px 29px;
+        font-size: 11px;
+
+    }
+}
+
+.btnn :hover{
+  background: var(--end-color);  
+}
+
+.banner{
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto)); 
+  align-items: center;
+  gap: 2.5rem;
+  
+  }
+  
+  .banner-img{
+  overflow: hidden;
+  
+  }
+  
+  .banner-img img { 
+  width: 100%;
+  display: block;  
+  transition: transform 0.5s;
+  cursor: pointer;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+  margin-left: 10px; 
+  margin-right: 10px;
+}
+.banner-img img:hover {
+  transform: scale(1.1);   /* donne l'effet zoom*/
+}
+
+/* slier*/
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #041813;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #041813 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+  :root {
+    --h-color: #143620 ;
+    --bg-color: #f2ffa8;
+  
+    --main-color: #12661dea;
+    --text-color: #010101;
+    --end-color:  #143620;
+    --other-color: #2c2828;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem;
+  }
